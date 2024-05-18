@@ -20,7 +20,7 @@ export default function Footer() {
           <a
             key={index}
             href={item.href}
-            className="flex h-8 w-fit items-center justify-center gap-2 rounded-full bg-background-800 p-2 text-sm  hover:text-text-100"
+            className="flex h-8 w-fit items-center justify-center gap-2 rounded-full p-2 text-sm  hover:text-text-100"
           >
             {item.icon} <span>{item.title}</span>
           </a>
