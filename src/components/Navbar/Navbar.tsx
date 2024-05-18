@@ -34,12 +34,12 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`absolute top-0 z-40 flex w-full select-none flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
+      className={`top-0 z-40 flex w-full select-none flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter lg:absolute  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
     >
       {visible && (
         <Link
           href="/"
-          className={`${font.className} select-none p-4 text-4xl text-text-200`}
+          className={`${font.className} hidden select-none p-4 text-4xl text-text-200 lg:flex`}
           onDragStart={(e) => e.preventDefault()}
         >
           Altın Saray
@@ -51,7 +51,7 @@ export default function Navbar() {
         className={` flex flex-row justify-center gap-2  ${visible ? "" : "absolute left-0 top-2 z-40 w-full"}`}
       >
         <div
-          className={`flex flex-row gap-2 ${visible ? "" : "gradient w-fit rounded-2xl p-4 text-text-100 shadow-2xl"}`}
+          className={`flex flex-row flex-wrap justify-center gap-2 ${visible ? "" : "gradient w-fit rounded-2xl p-4 text-text-100 shadow-2xl"}`}
         >
           {navigationLinks.map((link) => (
             <Link
@@ -68,7 +68,7 @@ export default function Navbar() {
       {visible && (
         <Link
           href={"tel:+905555555555"}
-          className="flex flex-row items-center gap-2 transition-all duration-700 hover:font-medium"
+          className=" hidden flex-row items-center gap-2 transition-all duration-700 hover:font-medium lg:flex"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           onDragStart={(e) => e.preventDefault()}
