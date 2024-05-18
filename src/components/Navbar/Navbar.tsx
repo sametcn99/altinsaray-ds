@@ -34,12 +34,13 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`absolute top-0 z-40 flex w-full flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
+      className={`absolute top-0 z-40 flex w-full select-none flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
     >
       {visible && (
         <Link
           href="/"
-          className={`${font.className} gradient select-none bg-clip-text p-4 text-4xl text-transparent transition-all duration-700 hover:bg-text-200 hover:font-bold`}
+          className={`${font.className} select-none p-4 text-4xl text-text-200`}
+          onDragStart={(e) => e.preventDefault()}
         >
           Altın Saray
           <br />
@@ -57,6 +58,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className="transition-all duration-700 hover:scale-105 hover:font-bold"
+              onDragStart={(e) => e.preventDefault()}
             >
               {link.title}
             </Link>
@@ -69,6 +71,7 @@ export default function Navbar() {
           className="flex flex-row items-center gap-2 transition-all duration-700 hover:font-medium"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
+          onDragStart={(e) => e.preventDefault()}
         >
           <div>
             <FaPhone
