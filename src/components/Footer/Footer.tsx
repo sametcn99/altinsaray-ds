@@ -39,7 +39,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="mb-2 grid h-fit w-full grid-cols-2 rounded-2xl bg-gradient-to-br from-text-500 via-text-600 to-text-700 p-2 py-10 font-bold text-text-200">
+    <footer className="gradient mb-2 grid h-fit w-full grid-cols-2 rounded-2xl p-2 py-10 font-bold text-text-200">
       <div className="flex flex-col items-center">
         <div className="grid gap-2">
           {siteNavigation.map((item, index) => (

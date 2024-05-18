@@ -5,7 +5,7 @@ import InformationCard from "./Cards/InformationCard";
 export default function AboutUs() {
   return (
     <section
-      className="flex min-h-screen w-full flex-row items-center justify-center gap-6"
+      className="flex min-h-screen w-full flex-row flex-wrap items-center justify-center gap-6"
       id="hakkimizda"
     >
       <LetterCard />

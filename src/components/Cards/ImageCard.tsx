@@ -65,7 +65,7 @@ export const ImageCard = () => {
     <div className="relative flex h-[35rem] w-[35rem] items-center justify-center overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
-          className="relative h-[35rem] w-[30rem] rounded-lg object-cover shadow-lg"
+          className="relative h-[20rem] w-[30rem] rounded-lg object-cover shadow-lg md:h-[30rem]"
           key={page}
           src={sampleImages[imageIndex].src}
           custom={direction}

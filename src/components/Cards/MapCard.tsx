@@ -5,13 +5,13 @@ import InformationCard from "./InformationCard";
 export default function MapCard() {
   return (
     <div
-      className="flex min-h-screen w-full flex-row items-center justify-center gap-6"
+      className="flex min-h-screen w-full flex-row flex-wrap items-center justify-center gap-6"
       id="ulasim"
     >
       <iframe
         title="Google Map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.9970445494037!2d32.797512976442555!3d39.986171381731424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34bf0f51cf46b%3A0xf9a948d87ca30b42!2sBur%C3%A7%2C%20Piri%20Cd.%2078%20C%2C%2006210%20Yenimahalle%2FAnkara!5e0!3m2!1sen!2str!4v1715987001564!5m2!1sen!2str"
-        className="h-96 w-96 rounded-2xl shadow-2xl"
+        className="rounded-2xl shadow-2xl md:h-96 md:w-96"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
         id="google-map"
