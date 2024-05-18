@@ -2,6 +2,7 @@ import React from "react";
 import InformationSection from "./Cards/InformationSection";
 import Image from "next/image";
 import DescriptionCard from "./Cards/DescriptionCard";
+import { CheckIcon } from "./CheckIcon";
 
 export default function WhyChooseUs() {
   return (
@@ -13,15 +14,54 @@ export default function WhyChooseUs() {
         height={400}
         className=""
       />
-      <DescriptionCard
-        title="Bizi Neden Tercih Etmelisiniz"
-        description="Modern dekorasyonu ve geniş kapasitesiyle, her türlü özel etkinliğe ev
-        sahipliği yapmaktayız. Profesyonel ekibimiz, en mutlu gününüzde size
-        kusursuz bir hizmet sunmak için buradadır. Misafirlerinizin rahatlığı
-        için geniş otopark ve merkezi bir konum avantajı sunuyoruz. Bizi tercih
-        eden çiftlerimize hayallerindeki düğünü gerçeğe dönüştürme sözü
-        veriyoruz."
-      />
+      <DescriptionCard title="Bizi Neden Tercih Etmelisiniz">
+        <ul className="flex flex-col">
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Modern dekorasyon
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Geniş kapasite
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Özel etkinlikler
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Profesyonel ekip
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Kusursuz hizmet
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Mutlu gün
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Misafir rahatlığı
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Geniş otopark
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Merkezi konum
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Çiftlerimize söz
+          </li>
+          <li className="flex flex-row gap-2">
+            <CheckIcon />
+            Hayalinizdeki düğün
+          </li>
+        </ul>
+      </DescriptionCard>
     </InformationSection>
   );
 }

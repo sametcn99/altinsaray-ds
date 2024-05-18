@@ -91,15 +91,6 @@ export const ImageCard = () => {
           }}
         />
       </AnimatePresence>
-      <IoIosArrowDropright
-        className="absolute right-0 top-1/2 z-10 text-5xl text-text-300 transition-all duration-700 hover:scale-105 hover:cursor-pointer"
-        onClick={() => paginate(1)}
-      />
-
-      <IoIosArrowDropleft
-        className="absolute left-0 top-1/2 z-10 text-5xl text-text-300 transition-all duration-700 hover:scale-105 hover:cursor-pointer"
-        onClick={() => paginate(-1)}
-      />
     </div>
   );
 };

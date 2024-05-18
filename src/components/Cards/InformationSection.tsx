@@ -9,7 +9,7 @@ export default function InformationSection({
 }) {
   return (
     <section
-      className="flex min-h-screen w-full flex-row flex-wrap items-center justify-center gap-6"
+      className="flex w-full flex-row flex-wrap items-center justify-center gap-6 py-20"
       id={id}
     >
       <div className="gradient flex w-full flex-row flex-wrap justify-center  gap-6 rounded-2xl p-6 text-text-200 shadow-xl">

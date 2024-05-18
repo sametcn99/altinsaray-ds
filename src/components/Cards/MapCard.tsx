@@ -14,15 +14,16 @@ export default function MapCard() {
         referrerPolicy="no-referrer-when-downgrade"
         id="google-map"
       ></iframe>
-      <DescriptionCard
-        title="Ulaşım"
-        description="Piri Caddesi, No: 30, Burç Mahallesi, Ankara'daki düğün
-          salonumuza ulaşmak için Kızılay'dan Batıkent yönüne giden metroya
-          binip Atatürk Kültür Merkezi'nde inin ve 210 numaralı otobüse
-          geçerek Piri Caddesi durağında inebilirsiniz. Özel araçla
+      <DescriptionCard title="Ulaşım">
+        <p>
+          Piri Caddesi, No: 30, Burç Mahallesi, Ankara`&apos;`daki düğün
+          salonumuza ulaşmak için Kızılay`&apos;`dan Batıkent yönüne giden
+          metroya binip Atatürk Kültür Merkezi`&apos;`nde inin ve 210 numaralı
+          otobüse geçerek Piri Caddesi durağında inebilirsiniz. Özel araçla
           geliyorsanız, Eskişehir Yolu üzerinden Burç Mahallesi tabelalarını
-          takip edin. Salonumuzun önünde geniş bir otopark bulunmaktadır."
-      />
+          takip edin. Salonumuzun önünde geniş bir otopark bulunmaktadır
+        </p>
+      </DescriptionCard>
     </InformationSection>
   );
 }
