@@ -2,11 +2,12 @@ import React from "react";
 import { ImageCard } from "../Cards/ImageCard";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import IconButton from "../Buttons/IconButton";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <main
-      className="flex min-h-screen flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900"
+      className="relative flex min-h-screen flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900"
       id="hosgeldiniz"
     >
       <div className="max-w-xl">
