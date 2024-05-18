@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body
-        className={`${montserrat.className} selection:text-text mx-auto max-w-screen-2xl bg-background-900 px-3 text-text-50 antialiased selection:bg-text-700 `}
+        className={`${montserrat.className} selection:text-text mx-auto max-w-screen-2xl scroll-smooth bg-background-900 px-3 text-text-50 antialiased selection:bg-text-700 `}
       >
         {/* <Navbar /> */}
         {children}
