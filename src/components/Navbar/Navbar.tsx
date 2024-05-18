@@ -72,7 +72,7 @@ export default function Navbar() {
         >
           <div>
             <FaPhone
-              className={`m-2 inline rounded-2xl p-2 text-5xl transition-all duration-500 ${hover ? "rotate-12 font-bold" : "rotate-0"}`}
+              className={`m-2 inline rounded-2xl p-2 text-5xl transition-all duration-500 ${hover ? "rotate-12 font-bold text-green-500" : "rotate-0"}`}
             />
           </div>
           <div className="flex flex-col">
