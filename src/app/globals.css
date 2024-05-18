@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient {
+  @apply bg-gradient-to-br from-text-500 via-text-600 to-text-700;
+}

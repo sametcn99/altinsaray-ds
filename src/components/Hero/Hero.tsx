@@ -5,9 +5,12 @@ import IconButton from "../Buttons/IconButton";
 
 export default function Hero() {
   return (
-    <main className="flex min-h-screen flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900">
+    <main
+      className="flex min-h-screen flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900"
+      id="hosgeldiniz"
+    >
       <div className="max-w-xl">
-        <h1 className="bg-gradient-to-br from-text-500 via-text-600 to-text-700 bg-clip-text text-center text-6xl font-black text-transparent lg:text-left">
+        <h1 className="gradient bg-clip-text text-center text-6xl font-black text-transparent lg:text-left">
           Altın Saray Düğün Salonları
         </h1>
         <p className="font-light">
