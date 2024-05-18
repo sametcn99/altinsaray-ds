@@ -16,7 +16,7 @@ export default function PlanCard({
   return (
     <div className="relative flex flex-col justify-between rounded-lg border border-gray-200  bg-white p-6 shadow-lg">
       {popular && (
-        <div className="absolute left-1/2 top-0 inline-block -translate-x-1/2 -translate-y-1/2 transform select-none rounded-full bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 px-3 py-1 text-sm text-white">
+        <div className="absolute left-1/2 top-0 inline-block -translate-x-1/2 -translate-y-1/2 transform select-none rounded-full bg-gradient-to-br from-text-400 via-text-500 to-text-700 px-3 py-1 text-sm text-white shadow-xl">
           Popüler
         </div>
       )}
@@ -28,7 +28,7 @@ export default function PlanCard({
         <ul className="mt-4 space-y-2">
           {tags.map((tag) => (
             <li className="flex items-center" key={tag}>
-              <CheckIcon className="mr-2 rounded-full bg-accent-500 p-1 text-xs text-white" />
+              <CheckIcon className="mr-2 rounded-full bg-text-700 p-1 text-xs text-white" />
               {tag}
             </li>
           ))}
@@ -36,7 +36,7 @@ export default function PlanCard({
       </div>
       <div className="mt-6">
         <Button
-          className={`w-full ${popular ? `gradient transition-all duration-700 hover:scale-105` : ``}`}
+          className={`w-full bg-text-100 transition-all duration-700 hover:bg-text-200 ${popular ? `gradient bg-text-50 hover:scale-105 hover:bg-text-200` : ``}`}
         >
           Başla
         </Button>
