@@ -38,10 +38,6 @@ export default function WhyChooseUs() {
           </li>
           <li className="flex flex-row gap-2">
             <CheckIcon />
-            Mutlu gün
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
             Misafir rahatlığı
           </li>
           <li className="flex flex-row gap-2">
@@ -51,10 +47,6 @@ export default function WhyChooseUs() {
           <li className="flex flex-row gap-2">
             <CheckIcon />
             Merkezi konum
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Çiftlerimize söz
           </li>
           <li className="flex flex-row gap-2">
             <CheckIcon />
