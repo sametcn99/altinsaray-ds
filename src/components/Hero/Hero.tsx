@@ -11,7 +11,7 @@ export default function Hero() {
     >
       <div className="max-w-xl">
         <h1 className="gradient bg-clip-text text-center text-6xl font-black text-transparent lg:text-left">
-          Altın Saray Düğün Salonları
+          Altın Saray Wedding Hall
         </h1>
         <p className="font-light">
           Özel günlerinizi unutulmaz kılmak için, zarafet ve şıklığın buluştuğu

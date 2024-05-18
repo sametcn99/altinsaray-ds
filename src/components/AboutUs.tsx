@@ -1,15 +1,12 @@
 import React from "react";
 import LetterCard from "./Cards/LetterCard";
-import InformationCard from "./Cards/InformationCard";
+import InformationSection from "./Cards/InformationSection";
 import Image from "next/image";
+import DescriptionCard from "./Cards/DescriptionCard";
 
 export default function AboutUs() {
   return (
-    <section
-      className="flex min-h-screen w-full flex-row flex-wrap items-center justify-center gap-6"
-      id="hakkimizda"
-    >
-      {/* <LetterCard /> */}
+    <InformationSection id="hakkimizda">
       <Image
         src={"/images/simple gold-colored-minimal-letter-card.png"}
         alt="Letter Icon"
@@ -17,17 +14,10 @@ export default function AboutUs() {
         height={300}
         className=""
       />
-      <InformationCard>
-        <h2 className="text-4xl font-bold">Hakkımızda</h2>
-        <p>
-          Modern dekorasyonu ve geniş kapasitesiyle, her türlü özel etkinliğe ev
-          sahipliği yapmaktayız. Profesyonel ekibimiz, en mutlu gününüzde size
-          kusursuz bir hizmet sunmak için buradadır. Misafirlerinizin rahatlığı
-          için geniş otopark ve merkezi bir konum avantajı sunuyoruz. Bizi
-          tercih eden çiftlerimize hayallerindeki düğünü gerçeğe dönüştürme sözü
-          veriyoruz.
-        </p>
-      </InformationCard>
-    </section>
+      <DescriptionCard
+        title="Hakkımızda"
+        description="2010 yılında kurulan Altın Saray Wedding Hall, büyüleyici atmosferi ve modern olanaklarıyla dikkat çekiyor. 500 kişiye kadar misafir ağırlayabilen bu mekan, özel LED ışıklandırma sistemi ve zarif dekorasyonuyla unutulmaz bir düğün deneyimi sunuyor. Profesyonel şeflerin hazırladığı gurme lezzetler ve kişiye özel hizmetleri ile Altın Saray Wedding Hall, Ankara'da evlenecek çiftler için rüya gibi bir ortam sağlıyor."
+      />
+    </InformationSection>
   );
 }

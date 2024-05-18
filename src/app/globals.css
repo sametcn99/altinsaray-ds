@@ -5,3 +5,22 @@
 .gradient {
   @apply bg-gradient-to-br from-text-600 via-text-700 to-text-800;
 }
+
+.pattern {
+  --s: 50px; /* control the size */
+
+  --_g: #0000 83%, #898f3c 85% 99%, #0000 101%;
+  background:
+    radial-gradient(27% 29% at right, var(--_g)) calc(var(--s) / 2) var(--s),
+    radial-gradient(27% 29% at left, var(--_g)) calc(var(--s) / -2) var(--s),
+    radial-gradient(29% 27% at top, var(--_g)) 0 calc(var(--s) / 2),
+    radial-gradient(29% 27% at bottom, var(--_g)) 0 calc(var(--s) / -2) #50533e;
+  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+}
+.pattern-2 {
+  background:
+    radial-gradient(at 80% 80%, #131313 25.4%, #0000 26%),
+    radial-gradient(at 20% 80%, #131313 25.4%, #0000 26%),
+    conic-gradient(from -45deg at 50% 41%, #131313 90deg, #020200 0) 38px 0;
+  background-size: 76px 76px;
+}

@@ -3,14 +3,12 @@
  * @see https://v0.dev/t/rRBlufM
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+import InformationSection from "./InformationSection";
 import PlanCard from "./PlanCard";
 
 export function Pricing() {
   return (
-    <section
-      className="flex min-h-screen w-full items-center justify-center py-12 dark:from-zinc-900 dark:to-zinc-800"
-      id="fiyatlandirma"
-    >
+    <InformationSection id="fiyatlandirma">
       <div className="container max-w-5xl px-4 md:px-6">
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
           <PlanCard
@@ -47,6 +45,6 @@ export function Pricing() {
           />
         </div>
       </div>
-    </section>
+    </InformationSection>
   );
 }
