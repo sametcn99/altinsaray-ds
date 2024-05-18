@@ -11,7 +11,7 @@ export default function IconButton({
   return (
     <div
       className={twMerge(
-        "flex w-fit flex-row items-center gap-2 rounded-xl bg-secondary-200 p-2 font-semibold text-text-900",
+        "flex w-fit flex-row items-center gap-2 rounded-xl bg-background-200 p-2 font-semibold text-text-900",
         className,
       )}
     >

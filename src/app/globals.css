@@ -6,21 +6,40 @@
   @apply bg-gradient-to-br from-text-600 via-text-700 to-text-800;
 }
 
-.pattern {
-  --s: 50px; /* control the size */
-
-  --_g: #0000 83%, #898f3c 85% 99%, #0000 101%;
-  background:
-    radial-gradient(27% 29% at right, var(--_g)) calc(var(--s) / 2) var(--s),
-    radial-gradient(27% 29% at left, var(--_g)) calc(var(--s) / -2) var(--s),
-    radial-gradient(29% 27% at top, var(--_g)) 0 calc(var(--s) / 2),
-    radial-gradient(29% 27% at bottom, var(--_g)) 0 calc(var(--s) / -2) #50533e;
-  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+:root {
+  --pattern-color: #999999;
+  --pattern-size: 76px;
+  --pattern-background: #979797;
 }
-.pattern-2 {
+.pattern {
   background:
-    radial-gradient(at 80% 80%, #131313 25.4%, #0000 26%),
-    radial-gradient(at 20% 80%, #131313 25.4%, #0000 26%),
-    conic-gradient(from -45deg at 50% 41%, #131313 90deg, #020200 0) 38px 0;
-  background-size: 76px 76px;
+    radial-gradient(
+        27% 29% at right,
+        #0000 83%,
+        var(--pattern-color) 85% 99%,
+        #0000 101%
+      )
+      calc(38px / 2) 38px,
+    radial-gradient(
+        27% 29% at left,
+        #0000 83%,
+        var(--pattern-color) 85% 99%,
+        #0000 101%
+      )
+      calc(38px / -2) 38px,
+    radial-gradient(
+        29% 27% at top,
+        #0000 83%,
+        var(--pattern-color) 85% 99%,
+        #0000 101%
+      )
+      0 calc(38px / 2),
+    radial-gradient(
+        29% 27% at bottom,
+        #0000 83%,
+        var(--pattern-color) 85% 99%,
+        #0000 101%
+      )
+      0 calc(38px / -2) var(--pattern-background);
+  background-size: var(--pattern-size) var(--pattern-size);
 }

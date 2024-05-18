@@ -38,7 +38,7 @@ export default function ScrollTop() {
   // Add a scroll event listener to track when to show or hide the button
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= 200) {
+      if (window.scrollY > 200) {
         setVisible(true);
       } else {
         setVisible(false);

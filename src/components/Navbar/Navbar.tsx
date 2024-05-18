@@ -3,16 +3,18 @@ import React, { useState, useEffect } from "react";
 import { navigationLinks } from "@/lib/navigation";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
-import { Dancing_Script } from "next/font/google";
+import { Courgette } from "next/font/google";
+import { motion } from "framer-motion";
 
-const dancingScript = Dancing_Script({
-  subsets: ["vietnamese"],
-  weight: ["700"],
+const font = Courgette({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,16 +34,17 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`gap-2px-4 sticky top-0 z-40 flex w-full flex-row items-center text-2xl filter  ${visible ? " justify-between border-b-2 backdrop-blur-sm" : "justify-center"}`}
+      className={`absolute top-0 z-40 flex w-full flex-row items-center gap-2 rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
     >
       {visible && (
-        <div
-          className={`${dancingScript.className} gradient bg-clip-text text-4xl text-transparent`}
+        <Link
+          href="/"
+          className={`${font.className} gradient select-none bg-clip-text p-4 text-4xl text-transparent transition-all duration-700 hover:bg-text-200 hover:font-bold`}
         >
           Altın Saray
           <br />
           Wedding Hall
-        </div>
+        </Link>
       )}
       <div
         className={` flex flex-row justify-center gap-2  ${visible ? "" : "absolute left-0 top-2 z-40 w-full"}`}
@@ -61,13 +64,22 @@ export default function Navbar() {
         </div>
       </div>
       {visible && (
-        <div className="flex flex-row items-center gap-2">
-          <FaPhone className="m-2 inline rounded-2xl border-2 p-2 text-5xl text-green-500" />
+        <Link
+          href={"tel:+905555555555"}
+          className="flex flex-row items-center gap-2 transition-all duration-700 hover:font-medium"
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        >
+          <div>
+            <FaPhone
+              className={`m-2 inline rounded-2xl p-2 text-5xl transition-all duration-500 ${hover ? "rotate-12 font-bold" : "rotate-0"}`}
+            />
+          </div>
           <div className="flex flex-col">
-            <a href="tel:+905555555555">0555 555 55 55</a>
+            <span>0555 555 55 55</span>
             <span className="text-sm">Bize Ulaşın</span>
           </div>
-        </div>
+        </Link>
       )}
     </nav>
   );
