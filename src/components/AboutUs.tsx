@@ -1,6 +1,7 @@
 import React from "react";
 import LetterCard from "./Cards/LetterCard";
 import InformationCard from "./Cards/InformationCard";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -9,6 +10,12 @@ export default function AboutUs() {
       id="hakkimizda"
     >
       <LetterCard />
+      {/* <Image
+        src={"/images/gold-letter.png"}
+        alt="Letter Icon"
+        width={300}
+        height={300}
+      /> */}
       <InformationCard>
         <h2 className="text-4xl font-bold">Hakkımızda</h2>
         <p>
