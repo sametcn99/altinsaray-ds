@@ -19,7 +19,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      if (currentScrollPosition > 200) {
+      if (currentScrollPosition > 500) {
         setVisible(false);
       } else {
         setVisible(true);
