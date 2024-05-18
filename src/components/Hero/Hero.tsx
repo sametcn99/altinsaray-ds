@@ -26,7 +26,7 @@ export default function Hero() {
           </IconButton>
           <IconButton>
             <FaWhatsapp className="text-2xl text-green-500" />
-            <span className="text-lg">Whatsapp Üzerinden Ulaşın</span>
+            <span className="text-lg">Whatsapp</span>
           </IconButton>
         </div>
       </div>
