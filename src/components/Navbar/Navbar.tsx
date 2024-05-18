@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`absolute top-0 z-40 flex w-full flex-row items-center gap-2 rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
+      className={`absolute top-0 z-40 flex w-full flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
     >
       {visible && (
         <Link
