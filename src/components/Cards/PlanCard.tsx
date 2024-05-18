@@ -16,7 +16,7 @@ export default function PlanCard({
   return (
     <div className="relative flex flex-col justify-between rounded-lg border border-gray-200  bg-white p-6 shadow-lg">
       {popular && (
-        <div className="absolute left-1/2 top-0 inline-block -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 px-3 py-1 text-sm text-white">
+        <div className="absolute left-1/2 top-0 inline-block -translate-x-1/2 -translate-y-1/2 transform select-none rounded-full bg-gradient-to-br from-accent-500 via-accent-600 to-accent-700 px-3 py-1 text-sm text-white">
           Popüler
         </div>
       )}

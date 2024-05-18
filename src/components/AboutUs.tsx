@@ -9,13 +9,14 @@ export default function AboutUs() {
       className="flex min-h-screen w-full flex-row flex-wrap items-center justify-center gap-6"
       id="hakkimizda"
     >
-      <LetterCard />
-      {/* <Image
-        src={"/images/gold-letter.png"}
+      {/* <LetterCard /> */}
+      <Image
+        src={"/images/simple gold-colored-minimal-letter-card.png"}
         alt="Letter Icon"
         width={300}
         height={300}
-      /> */}
+        className=""
+      />
       <InformationCard>
         <h2 className="text-4xl font-bold">Hakkımızda</h2>
         <p>

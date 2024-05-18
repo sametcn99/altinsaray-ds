@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .gradient {
-  @apply bg-gradient-to-br from-text-500 via-text-600 to-text-700;
+  @apply bg-gradient-to-br from-text-600 via-text-700 to-text-800;
 }
