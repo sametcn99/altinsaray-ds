@@ -20,7 +20,7 @@ export default function Hero() {
           Özel günlerinizi unutulmaz kılmak için, zarafet ve şıklığın buluştuğu
           eşsiz bir atmosferde, hayalinizdeki düğünü gerçeğe dönüştürüyoruz.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex select-none flex-wrap gap-2 pt-4">
           <IconButton>
             <FaPhoneAlt className="text-2xl text-green-500" />
             <span className="text-lg">+90 444 44 44</span>
