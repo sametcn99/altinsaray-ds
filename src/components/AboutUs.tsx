@@ -21,7 +21,7 @@ export default function AboutUs() {
           ağırlayabilen bu mekan, özel LED ışıklandırma sistemi ve zarif
           dekorasyonuyla unutulmaz bir düğün deneyimi sunuyor. Profesyonel
           şeflerin hazırladığı gurme lezzetler ve kişiye özel hizmetleri ile
-          Altın Saray Wedding Hall, Ankara`&apos;`da evlenecek çiftler için rüya
+          Altın Saray Wedding Hall, Ankara&apos;da evlenecek çiftler için rüya
           gibi bir ortam sağlıyor.
         </p>
       </DescriptionCard>
