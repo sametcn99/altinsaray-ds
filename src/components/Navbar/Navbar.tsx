@@ -53,7 +53,7 @@ export default function Navbar() {
       >
         <div
           className={cn(
-            `flex flex-row flex-wrap justify-center gap-2  ${visible ? "" : "gradient w-fit rounded-2xl p-4 text-base text-text-100 shadow-2xl"}`,
+            `flex flex-row flex-wrap justify-center gap-2  ${visible ? "" : "gradient w-fit rounded-2xl border p-4 text-base text-text-100 shadow-2xl"}`,
           )}
         >
           {navigationLinks.map((link) => (
