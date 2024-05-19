@@ -32,7 +32,7 @@ export default function Footer() {
         target="_blank"
         className="absolute bottom-2 left-1/2 -translate-x-1/2 transform text-sm text-text-100 transition-all duration-700 hover:scale-105 hover:text-text-200"
       >
-        Tasarım
+        tasarım sametcc.me
       </Link>
     </footer>
   );
