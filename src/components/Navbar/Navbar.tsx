@@ -1,10 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { navigationLinks } from "@/lib/navigation";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { Courgette } from "next/font/google";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const font = Courgette({

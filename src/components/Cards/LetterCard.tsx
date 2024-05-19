@@ -1,10 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import { Great_Vibes } from "next/font/google";
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-});
+
 export default function LetterCard() {
   return (
     <div className="">

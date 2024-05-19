@@ -1,5 +1,3 @@
-import React from "react";
-import LetterCard from "./Cards/LetterCard";
 import InformationSection from "./Cards/InformationSection";
 import Image from "next/image";
 import DescriptionCard from "./Cards/DescriptionCard";

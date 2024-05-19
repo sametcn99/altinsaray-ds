@@ -1,8 +1,6 @@
-import React from "react";
 import { ImageCard } from "../Cards/ImageCard";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import IconButton from "../Buttons/IconButton";
-import Image from "next/image";
 import { ImLocation } from "react-icons/im";
 
 export default function Hero() {

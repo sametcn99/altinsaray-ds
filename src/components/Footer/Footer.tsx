@@ -1,8 +1,6 @@
 import { navigationLinks } from "@/lib/navigation";
 import { socialMedia } from "@/lib/socialMedia";
 import Link from "next/link";
-import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (

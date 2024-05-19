@@ -1,5 +1,3 @@
-import React from "react";
-import styles from "./MapCard.module.css";
 import InformationSection from "./InformationSection";
 import DescriptionCard from "./DescriptionCard";
 

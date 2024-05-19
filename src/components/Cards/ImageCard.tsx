@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { sampleImages } from "@/lib/images";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 const variants = {
   enter: (direction: number) => {
