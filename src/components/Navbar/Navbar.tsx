@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav
       id="navbar"
       className={cn(
-        `z-40 flex  w-full select-none flex-row flex-wrap items-center justify-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter backdrop-blur-sm lg:justify-between`,
+        `z-40 hidden w-full select-none flex-row flex-wrap items-center justify-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter backdrop-blur-sm md:flex lg:justify-between`,
       )}
     >
       <Link

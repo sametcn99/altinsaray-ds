@@ -6,7 +6,7 @@ import { ImLocation } from "react-icons/im";
 export default function Hero() {
   return (
     <main
-      className="relative flex min-h-screen flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900"
+      className="relative flex flex-row flex-wrap items-center justify-center gap-4 selection:bg-text-300 selection:text-text-900"
       id="hosgeldiniz"
     >
       <div className="max-w-xl">
