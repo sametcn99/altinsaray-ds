@@ -12,7 +12,6 @@ export default function NavbarWrapper() {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
       if (currentScrollPosition > 300) {
-        console.log("miniNavbar");
         setMiniNavbar(true);
       } else {
         setMiniNavbar(false);
