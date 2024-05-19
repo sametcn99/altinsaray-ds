@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import ScrollTop from "@/components/ui/ScrollTop";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
+import Notification from "@/components/Notification";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
