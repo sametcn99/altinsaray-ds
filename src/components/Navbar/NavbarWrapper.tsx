@@ -23,5 +23,10 @@ export default function NavbarWrapper() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrollPosition]);
-  return <>{miniNavbar ? <MiniNavbar /> : <Navbar />}</>;
+  return (
+    <>
+      <Navbar />
+      {miniNavbar && <MiniNavbar />}
+    </>
+  );
 }
