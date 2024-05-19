@@ -27,8 +27,8 @@ export default function MapCard() {
             alt="Google Map"
             objectFit="cover"
             className="rounded-2xl"
-            width={300}
-            height={300}
+            width={100}
+            height={100}
           />
           <p className="text-center font-bold">
             Canlı Harita Yüklenemedi. <br />
