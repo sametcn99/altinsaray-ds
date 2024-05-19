@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="flex select-none flex-col flex-wrap gap-2 pt-4">
           <div className="flex flex-row items-center gap-1">
             <ImLocation className="text-text-600" />
-            <span>Dikmen, Ankara</span>
+            <span>Harbiye Zarif Sk. No:1 Çankaya/ANKARA</span>
           </div>
           <div className="flex flex-row flex-wrap gap-2">
             <IconButton>
