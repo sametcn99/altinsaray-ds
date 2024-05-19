@@ -35,7 +35,9 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`absolute top-0 z-40 hidden w-full  select-none flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter lg:flex  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`}
+      className={cn(
+        `absolute top-0 z-40 hidden w-full  select-none flex-row items-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter lg:flex  ${visible ? "justify-between backdrop-blur-sm" : "sticky top-0 justify-center"}`,
+      )}
     >
       {visible && (
         <Link
@@ -49,7 +51,9 @@ export default function Navbar() {
         </Link>
       )}
       <div
-        className={` flex flex-row justify-center gap-2  ${visible ? "" : "absolute left-0 top-2 z-40 w-full"}`}
+        className={cn(
+          ` flex flex-row justify-center gap-2  ${visible ? "" : "absolute left-0 top-2 z-40 w-full"}`,
+        )}
       >
         <div
           className={cn(
@@ -78,7 +82,9 @@ export default function Navbar() {
         >
           <div>
             <FaPhone
-              className={`m-2 inline rounded-2xl p-2 text-5xl transition-all duration-500 ${hover ? "rotate-12 font-bold text-green-500" : "rotate-0"}`}
+              className={cn(
+                `m-2 inline rounded-2xl p-2 text-5xl transition-all duration-500 ${hover ? "rotate-12 font-bold text-green-500" : "rotate-0"}`,
+              )}
             />
           </div>
           <div className="flex flex-col">
