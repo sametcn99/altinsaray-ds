@@ -12,7 +12,7 @@ export default function Hero() {
       id="hosgeldiniz"
     >
       <div className="max-w-xl">
-        <h1 className=" gradient text-nowrap bg-clip-text text-center text-3xl font-black text-transparent sm:text-5xl md:text-6xl lg:text-left">
+        <h1 className=" gradient text-nowrap bg-clip-text  text-center text-4xl font-black text-transparent sm:text-6xl  lg:text-left">
           Altın Saray
           <br />
           Wedding Hall

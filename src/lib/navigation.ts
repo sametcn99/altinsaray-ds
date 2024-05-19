@@ -1,7 +1,7 @@
 export const navigationLinks = [
-  { href: "/", title: "Ana Sayfa" },
-  { href: "#galeri", title: "Galeri" },
-  { href: "#iletisim", title: "İletişim" },
-  { href: "#ulasim", title: "Ulaşım" },
-  { href: "#hakkimizda", title: "Hakkımızda" },
+  { href: "/", title: "Ana Sayfa", id: "hosgeldiniz" },
+  { href: "#galeri", title: "Galeri", id: "galeri" },
+  { href: "#iletisim", title: "İletişim", id: "iletisim" },
+  { href: "#ulasim", title: "Ulaşım", id: "ulasim" },
+  { href: "#hakkimizda", title: "Hakkımızda", id: "hakkimizda" },
 ];
