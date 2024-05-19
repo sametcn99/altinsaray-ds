@@ -3,6 +3,7 @@ import { ImageCard } from "../Cards/ImageCard";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import IconButton from "../Buttons/IconButton";
 import Image from "next/image";
+import { ImLocation } from "react-icons/im";
 
 export default function Hero() {
   return (
@@ -20,15 +21,21 @@ export default function Hero() {
           Özel günlerinizi unutulmaz kılmak için, zarafet ve şıklığın buluştuğu
           eşsiz bir atmosferde, hayalinizdeki düğünü gerçeğe dönüştürüyoruz.
         </p>
-        <div className="flex select-none flex-wrap gap-2 pt-4">
-          <IconButton>
-            <FaPhoneAlt className="text-2xl text-green-500" />
-            <span className="text-lg">+90 444 44 44</span>
-          </IconButton>
-          <IconButton>
-            <FaWhatsapp className="text-2xl text-green-500" />
-            <span className="text-lg">Whatsapp</span>
-          </IconButton>
+        <div className="flex select-none flex-col flex-wrap gap-2 pt-4">
+          <div className="flex flex-row items-center gap-1">
+            <ImLocation className="text-text-600" />
+            <span>Dikmen, Ankara</span>
+          </div>
+          <div className="flex flex-row flex-wrap gap-2">
+            <IconButton>
+              <FaPhoneAlt className="text-2xl text-green-500" />
+              <span className="text-lg">+90 444 44 44</span>
+            </IconButton>
+            <IconButton>
+              <FaWhatsapp className="text-2xl text-green-500" />
+              <span className="text-lg">Whatsapp</span>
+            </IconButton>
+          </div>
         </div>
       </div>
       <ImageCard />
