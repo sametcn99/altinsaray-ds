@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { Courgette } from "next/font/google";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 const font = Courgette({
   subsets: ["latin"],
@@ -51,7 +52,9 @@ export default function Navbar() {
         className={` flex flex-row justify-center gap-2  ${visible ? "" : "absolute left-0 top-2 z-40 w-full"}`}
       >
         <div
-          className={`flex flex-row flex-wrap justify-center gap-2 ${visible ? "" : "gradient w-fit rounded-2xl p-4 text-text-100 shadow-2xl"}`}
+          className={cn(
+            `flex flex-row flex-wrap justify-center gap-2  ${visible ? "" : "gradient w-fit rounded-2xl p-4 text-base text-text-100 shadow-2xl"}`,
+          )}
         >
           {navigationLinks.map((link) => (
             <Link
