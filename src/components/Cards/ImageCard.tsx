@@ -1,9 +1,9 @@
 "use client";
-import * as React from "react";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { sampleImages } from "@/lib/images";
+import Loader from "../Icons/Loader";
 
 const variants = {
   enter: (direction: number) => {
@@ -38,6 +38,7 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 export const ImageCard = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [[page, direction], setPage] = useState([0, 0]);
   const imageIndex = wrap(0, sampleImages.length, page);
 
@@ -45,7 +46,7 @@ export const ImageCard = () => {
   // then wrap that within 0-2 to find our image ID in the array below. By passing an
   // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
   // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
-  const paginate = React.useCallback(
+  const paginate = useCallback(
     (newDirection: number) => {
       setPage([page + newDirection, newDirection]);
     },
@@ -53,42 +54,56 @@ export const ImageCard = () => {
   );
 
   // change image index every 5 seconds
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       paginate(1);
     }, 5000);
     return () => clearInterval(interval);
   }, [page, paginate]);
 
+  useEffect(() => {
+    const img = new Image();
+    img.src = sampleImages[imageIndex].src;
+    img.onload = () => setIsLoading(false);
+    return () => {
+      img.onload = null;
+    };
+  }, [imageIndex]);
+
   return (
     <div className="relative flex h-[35rem] w-[35rem] items-center justify-center overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
-        <motion.img
-          className="relative h-[20rem] w-[30rem] rounded-lg object-cover shadow-lg md:h-[30rem]"
-          key={page}
-          src={sampleImages[imageIndex].src}
-          custom={direction}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{
-            x: { type: "keyframes" },
-            opacity: { duration: 0.2 },
-          }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={1}
-          onDragEnd={(e, { offset, velocity }) => {
-            const swipe = swipePower(offset.x, velocity.x);
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <motion.img
+            className="relative h-[20rem] w-[30rem] rounded-lg object-cover shadow-lg md:h-[30rem]"
+            onLoad={() => setIsLoading(false)}
+            key={page}
+            src={sampleImages[imageIndex].src}
+            custom={direction}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: "keyframes" },
+              opacity: { duration: 0.2 },
+            }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={1}
+            onDragEnd={(e, { offset, velocity }) => {
+              const swipe = swipePower(offset.x, velocity.x);
 
-            if (swipe < -swipeConfidenceThreshold) {
-              paginate(1);
-            } else if (swipe > swipeConfidenceThreshold) {
-              paginate(-1);
-            }
-          }}
-        />
+              if (swipe < -swipeConfidenceThreshold) {
+                paginate(1);
+              } else if (swipe > swipeConfidenceThreshold) {
+                paginate(-1);
+              }
+            }}
+          />
+        )}
       </AnimatePresence>
     </div>
   );
