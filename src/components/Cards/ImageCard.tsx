@@ -73,7 +73,7 @@ export const ImageCard = () => {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
+            x: { type: "keyframes" },
             opacity: { duration: 0.2 },
           }}
           drag="x"
