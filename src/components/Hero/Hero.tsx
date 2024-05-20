@@ -33,6 +33,7 @@ export default function Hero() {
         <div className="flex select-none flex-col flex-wrap items-center justify-center gap-2">
           <Link
             href={`tel:${texts.telephone}`}
+            target="_blank"
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
             <FaPhoneAlt className="text-2xl text-green-500" />
@@ -40,6 +41,7 @@ export default function Hero() {
           </Link>
           <Link
             href={`https://wa.me/${texts.whatsapp}`}
+            target="_blank"
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
             <FaWhatsapp className="text-2xl text-green-500" />

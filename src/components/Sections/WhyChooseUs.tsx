@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
   return (
     <InformationSection id="bizi-neden-tercih-etmelisiniz">
       <Image
-        src={"/images/wedding.png"}
+        src={"/wedding.png"}
         alt="Letter Icon"
         width={400}
         height={400}
