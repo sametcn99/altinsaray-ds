@@ -1,6 +1,5 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { motion } from "framer-motion"; // Framer Motion import edildi
 

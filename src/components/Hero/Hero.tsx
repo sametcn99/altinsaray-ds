@@ -1,6 +1,4 @@
-import { ImageCard } from "../Cards/ImageCard";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import IconButton from "../Buttons/IconButton";
 import { ImLocation } from "react-icons/im";
 import Link from "next/link";
 import Modal from "../ui/Modal";

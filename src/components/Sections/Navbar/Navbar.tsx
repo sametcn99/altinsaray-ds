@@ -12,7 +12,6 @@ const font = Courgette({
 });
 
 export default function Navbar() {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [hover, setHover] = useState(false);
 
   const handleClick = (id: string) => {

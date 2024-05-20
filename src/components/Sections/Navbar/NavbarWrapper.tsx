@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 export default function NavbarWrapper() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [miniNavbar, setMiniNavbar] = useState(false);
-  const [hover, setHover] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

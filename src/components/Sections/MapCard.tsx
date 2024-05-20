@@ -4,7 +4,6 @@ import InformationSection from "../Cards/InformationSection";
 import DescriptionCard from "../Cards/DescriptionCard";
 import Link from "next/link";
 import Image from "next/image";
-import { isMobile } from "react-device-detect";
 import { texts } from "@/lib/texts";
 
 export default function MapCard() {
