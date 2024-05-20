@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  @apply bg-opacity-30 bg-gradient-radial from-text-600  backdrop-blur-sm;
+  @apply bg-text-600 bg-opacity-50  backdrop-blur-sm;
 }
 
 .button {
@@ -15,9 +15,9 @@
 }
 
 :root {
-  --pattern-color: #999999;
+  --pattern-color: #383838;
   --pattern-size: 76px;
-  --pattern-background: #979797;
+  --pattern-background: #363636;
 }
 
 .pattern {
