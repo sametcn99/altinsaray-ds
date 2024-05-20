@@ -19,6 +19,7 @@
   --pattern-size: 76px;
   --pattern-background: #979797;
 }
+
 .pattern {
   background:
     radial-gradient(
