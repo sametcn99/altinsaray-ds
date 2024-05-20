@@ -11,6 +11,11 @@ export default function manifest(): MetadataRoute.Manifest {
         sizes: "1000x1000",
         purpose: "any",
       },
+      {
+        src: "/favicon.png",
+        sizes: "1000x1000",
+        purpose: "maskable",
+      },
     ],
     shortcuts: [
       {
@@ -27,6 +32,7 @@ export default function manifest(): MetadataRoute.Manifest {
         ],
       },
     ],
+    display: "standalone",
     short_name: "Altın Saray",
     start_url: "/",
     theme_color: "#e2cb65",
