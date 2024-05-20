@@ -40,7 +40,7 @@ export default function MiniNavbar() {
       <motion.div
         variants={item}
         className={cn(
-          `gradient flex w-fit flex-row flex-wrap justify-center gap-2 rounded-2xl border p-4 text-base text-text-100 shadow-2xl`,
+          `navbar flex w-fit flex-row flex-wrap justify-center gap-2 rounded-2xl border p-4 text-base text-text-100 shadow-2xl`,
         )}
       >
         {navigationLinks.map((link) => (

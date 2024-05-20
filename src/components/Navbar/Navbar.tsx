@@ -24,12 +24,12 @@ export default function Navbar() {
     <nav
       id="navbar"
       className={cn(
-        `z-40 flex w-full select-none flex-row flex-wrap items-center justify-center gap-2 text-nowrap rounded-2xl px-4 text-2xl filter backdrop-blur-sm lg:justify-between`,
+        `z-50 flex w-full select-none flex-row flex-wrap items-center justify-center gap-2 text-nowrap rounded-2xl px-4 text-2xl lg:justify-between`,
       )}
     >
       <Link
         href="/"
-        className={`${font.className} flex select-none p-4 text-4xl text-text-200`}
+        className={`${font.className} gradient flex select-none bg-clip-text p-4 text-4xl`}
         onDragStart={(e) => e.preventDefault()}
       >
         Altın Saray

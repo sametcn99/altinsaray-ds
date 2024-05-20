@@ -6,6 +6,14 @@
   @apply bg-gradient-to-br from-text-600 via-text-700 to-text-800;
 }
 
+.navbar {
+  @apply bg-opacity-30 bg-gradient-radial from-text-600  backdrop-blur-sm;
+}
+
+.button {
+  @apply border bg-background-100 bg-opacity-20 text-text-700 backdrop-blur-sm transition-all duration-700 hover:cursor-pointer hover:bg-opacity-40;
+}
+
 :root {
   --pattern-color: #999999;
   --pattern-size: 76px;

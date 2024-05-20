@@ -20,7 +20,7 @@ export default function Hero() {
           eşsiz bir atmosferde, hayalinizdeki düğünü gerçeğe dönüştürüyoruz.
         </p>
         <div className="flex select-none flex-col flex-wrap gap-2 pt-4">
-          <div className="flex flex-row items-center gap-1">
+          <div className="flex select-text flex-row items-center gap-1">
             <ImLocation className="text-text-600" />
             <span>Harbiye Zarif Sk. No:1 Çankaya/ANKARA</span>
           </div>
