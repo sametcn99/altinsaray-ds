@@ -3,8 +3,8 @@
  * @see https://v0.dev/t/rRBlufM
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import InformationSection from "./InformationSection";
-import PlanCard from "./PlanCard";
+import InformationSection from "../Cards/InformationSection";
+import PlanCard from "../Cards/PlanCard";
 
 export function Pricing() {
   return (

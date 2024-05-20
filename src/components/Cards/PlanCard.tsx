@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { CheckIcon } from "../CheckIcon";
+import { CheckIcon } from "../Icons/CheckIcon";
 
 export default function PlanCard({
   tags,

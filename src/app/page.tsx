@@ -1,9 +1,9 @@
-import AboutUs from "@/components/AboutUs";
-import MapCard from "@/components/Cards/MapCard";
-import { Pricing } from "@/components/Cards/Pricing";
-import GridFeatures from "@/components/GridFeatures";
+import AboutUs from "@/components/Sections/AboutUs";
+import MapCard from "@/components/Sections/MapCard";
+import { Pricing } from "@/components/Sections/Pricing";
+import GridFeatures from "@/components/Sections/GridFeatures";
 import Hero from "@/components/Hero/Hero";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import WhyChooseUs from "@/components/Sections/WhyChooseUs";
 
 export default function Home() {
   return (

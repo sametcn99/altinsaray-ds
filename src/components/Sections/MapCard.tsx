@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import InformationSection from "./InformationSection";
-import DescriptionCard from "./DescriptionCard";
+import InformationSection from "../Cards/InformationSection";
+import DescriptionCard from "../Cards/DescriptionCard";
 import Link from "next/link";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
+import { texts } from "@/lib/texts";
 
 export default function MapCard() {
   const [iframeLoaded, setIframeLoaded] = useState(true);
@@ -47,15 +48,8 @@ export default function MapCard() {
         </Link>
       )}
 
-      <DescriptionCard title="Ulaşım">
-        <p>
-          Piri Caddesi, No: 30, Burç Mahallesi, Ankara&apos;daki düğün
-          salonumuza ulaşmak için Kızılay&apos;dan Batıkent yönüne giden metroya
-          binip Atatürk Kültür Merkezi&apos;nde inin ve 210 numaralı otobüse
-          geçerek Piri Caddesi durağında inebilirsiniz. Özel araçla
-          geliyorsanız, Eskişehir Yolu üzerinden Burç Mahallesi tabelalarını
-          takip edin. Salonumuzun önünde geniş bir otopark bulunmaktadır
-        </p>
+      <DescriptionCard title={texts.ulasim.title}>
+        <p>{texts.ulasim.description}</p>
       </DescriptionCard>
     </InformationSection>
   );

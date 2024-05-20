@@ -3,8 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import ScrollTop from "@/components/ui/ScrollTop";
-import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
-import Notification from "@/components/Notification";
+import NavbarWrapper from "@/components/Sections/Navbar/NavbarWrapper";
+import Notification from "@/components/Buttons/Notification";
 import { cn } from "@/lib/utils";
 import LayoutBackground from "@/components/LayoutBackground/LayoutBackground";
 

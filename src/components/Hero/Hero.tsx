@@ -4,6 +4,7 @@ import IconButton from "../Buttons/IconButton";
 import { ImLocation } from "react-icons/im";
 import Link from "next/link";
 import Modal from "../ui/Modal";
+import { texts } from "@/lib/texts";
 
 export default function Hero() {
   return (
@@ -11,10 +12,8 @@ export default function Hero() {
       className="relative flex flex-col  items-center justify-center gap-4 py-32 selection:bg-text-300 selection:text-text-900"
       id="hosgeldiniz"
     >
-      <p className="max-w-[50rem] text-4xl font-light">
-        Özel günlerinizi unutulmaz kılmak için.
-      </p>
-      <h1 className="gradient text-nowrap bg-clip-text text-center text-4xl font-black text-transparent sm:text-8xl">
+      <p className="max-w-[50rem] text-4xl font-light">{texts.catchword}</p>
+      <h1 className="gradient bg-clip-text text-center text-4xl font-black text-transparent sm:text-8xl">
         Altın Saray
         <br />
         Wedding Hall
@@ -28,19 +27,19 @@ export default function Hero() {
           className="flex select-text flex-row items-center gap-1"
         >
           <ImLocation className="text-text-600" />
-          <span>Harbiye Zarif Sk. No:1 Çankaya/ANKARA</span>
+          <span>{texts.address}</span>
         </Link>
         <Modal>
           <div className="flex flex-col flex-wrap gap-2">
             <Link
-              href={"tel:+904444444"}
+              href={`tel:${texts.telephone}`}
               className="flex w-full flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
             >
               <FaPhoneAlt className="text-2xl text-green-500" />
-              <span className="text-lg">+90 444 44 44</span>
+              <span className="text-lg">{texts.telephone}</span>
             </Link>
             <Link
-              href={"https://wa.me/+904444444"}
+              href={`https://wa.me/${texts.telephone}`}
               className="flex flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
             >
               <FaWhatsapp className="text-2xl text-green-500" />
