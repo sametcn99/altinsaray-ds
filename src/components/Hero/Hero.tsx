@@ -11,7 +11,7 @@ export default function Hero() {
       className="relative flex flex-row flex-wrap-reverse items-center justify-center gap-4 py-8 selection:bg-text-300 selection:text-text-900"
       id="hosgeldiniz"
     >
-      <div className="flex select-none flex-col flex-wrap gap-2 pt-4">
+      <div className="flex  flex-col flex-wrap gap-2 pt-4">
         <p className="max-w-[50rem] text-4xl font-light">{texts.catchword}</p>
         <h1 className="gradient bg-clip-text text-center text-5xl font-black text-transparent sm:text-8xl">
           Altın Saray
@@ -28,7 +28,7 @@ export default function Hero() {
           <ImLocation className="text-text-600" />
           <span>{texts.address}</span>
         </Link>
-        <div className="flex flex-col flex-wrap items-center justify-center gap-2">
+        <div className="flex select-none flex-col flex-wrap items-center justify-center gap-2">
           <Link
             href={`tel:${texts.telephone}`}
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
