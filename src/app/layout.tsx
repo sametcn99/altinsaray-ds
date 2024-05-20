@@ -6,7 +6,6 @@ import ScrollTop from "@/components/ui/ScrollTop";
 import NavbarWrapper from "@/components/Sections/Navbar/NavbarWrapper";
 import Notification from "@/components/Buttons/Notification";
 import { cn } from "@/lib/utils";
-import LayoutBackground from "@/components/LayoutBackground/LayoutBackground";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -29,7 +28,6 @@ export default function RootLayout({
           <Footer />
           <ScrollTop />
         </section>
-        <LayoutBackground />
       </body>
     </html>
   );
