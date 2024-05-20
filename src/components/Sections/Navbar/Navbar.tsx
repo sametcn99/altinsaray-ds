@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
 import { Courgette } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { texts } from "@/lib/texts";
 
 const font = Courgette({
   subsets: ["latin"],
@@ -66,7 +67,7 @@ export default function Navbar() {
         </div>
         {menuOpen && (
           <Link
-            href={"tel:+905555555555"}
+            href={`tel:${texts.whatsapp}`}
             className="flex flex-row items-center gap-2 transition-all duration-700 hover:font-medium lg:hidden"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
@@ -79,14 +80,14 @@ export default function Navbar() {
               )}
             />
             <div className={cn("flex flex-col")}>
-              <span>0555 555 55 55</span>
+              <span>{texts.telephone}</span>
               <span className="text-sm">Bize Ulaşın</span>
             </div>
           </Link>
         )}
       </div>
       <Link
-        href={"tel:+905555555555"}
+        href={`tel:${texts.whatsapp}`}
         className="hidden flex-row items-center gap-2 transition-all duration-700 hover:font-medium lg:flex"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
@@ -99,7 +100,7 @@ export default function Navbar() {
           )}
         />
         <div className={cn("flex flex-col")}>
-          <span>0555 555 55 55</span>
+          <span>{texts.telephone}</span>
           <span className="text-sm">Bize Ulaşın</span>
         </div>
       </Link>

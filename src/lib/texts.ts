@@ -2,8 +2,8 @@ export const texts = {
   title: "Altın Saray Wedding Hall",
   catchword: "Özel günlerinizi unutulmaz kılmak için.",
   address: "Harbiye, Zarif Sk. No:1 D:C, 06460 Çankaya/Ankara",
-  telephone: "+90 444 44 44",
-  whatsapp: "+90 444 44 44",
+  telephone: "+90 535 457 83 12",
+  whatsapp: "+905354578312",
   hakkimizda: {
     title: "Hakkımızda",
     description:

@@ -1,10 +1,10 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
 import { FaEarthEurope } from "react-icons/fa6";
 
 export const socialMedia = [
   {
     title: "Website",
-    href: "https://altinsaray-ds.vercel.app/",
+    href: "https://www.altinsarayweddinghall.com",
     icon: <FaEarthEurope />,
   },
   {
@@ -18,8 +18,8 @@ export const socialMedia = [
     icon: <FaInstagram />,
   },
   {
-    title: "Twitter",
-    href: "https://www.twitter.com",
-    icon: <FaTwitter />,
+    title: "Tiktok",
+    href: "https://www.tiktok.com",
+    icon: <FaTiktok />,
   },
 ];

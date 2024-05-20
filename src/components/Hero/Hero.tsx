@@ -39,7 +39,7 @@ export default function Hero() {
             <span className="text-lg">{texts.telephone}</span>
           </Link>
           <Link
-            href={`https://wa.me/${texts.telephone}`}
+            href={`https://wa.me/${texts.whatsapp}`}
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
             <FaWhatsapp className="text-2xl text-green-500" />
