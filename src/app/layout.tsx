@@ -5,6 +5,8 @@ import Footer from "@/components/Footer/Footer";
 import ScrollTop from "@/components/ui/ScrollTop";
 import NavbarWrapper from "@/components/Navbar/NavbarWrapper";
 import Notification from "@/components/Notification";
+import { cn } from "@/lib/utils";
+import LayoutBackground from "@/components/LayoutBackground/LayoutBackground";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,13 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body
-        className={`${montserrat.className} pattern relative mx-auto max-w-screen-2xl scroll-smooth px-3 text-text-200 antialiased selection:bg-text-200 selection:text-text-700 `}
-      >
-        <NavbarWrapper />
-        {children}
-        <Footer />
-        <ScrollTop />
+      <body className={cn(`${montserrat.className} pattern  w-full`)}>
+        <section className="mx-auto max-w-screen-2xl scroll-smooth px-3 text-text-200 antialiased selection:bg-text-200 selection:text-text-700">
+          <NavbarWrapper />
+          {children}
+          <Footer />
+          <ScrollTop />
+        </section>
+        <LayoutBackground />
       </body>
     </html>
   );
