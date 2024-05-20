@@ -22,7 +22,7 @@ export default function LayoutBackground() {
           }}
           transition={{
             ease: "linear",
-            duration: 10,
+            duration: 20,
             repeatType: "reverse",
             repeat: Infinity,
           }}
