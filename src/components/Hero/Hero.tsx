@@ -11,7 +11,7 @@ export default function Hero() {
       id="hosgeldiniz"
     >
       <p className="max-w-[50rem] text-4xl font-light">{texts.catchword}</p>
-      <h1 className="gradient bg-clip-text text-center text-4xl font-black text-transparent sm:text-8xl">
+      <h1 className="gradient bg-clip-text text-center text-5xl font-black text-transparent sm:text-8xl">
         Altın Saray
         <br />
         Wedding Hall
