@@ -17,8 +17,8 @@ export default function WhyChooseUs() {
       />
       <DescriptionCard title="Bizi Neden Tercih Etmelisiniz">
         <ul className="flex flex-col gap-1">
-          {features.map((feature) => (
-            <li className="flex flex-row gap-4">
+          {features.map((feature, index) => (
+            <li className="flex flex-row gap-4" key={index}>
               <div>{feature.icon}</div>
               <h3> {feature.name}</h3>
             </li>
