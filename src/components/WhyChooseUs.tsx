@@ -3,6 +3,7 @@ import InformationSection from "./Cards/InformationSection";
 import Image from "next/image";
 import DescriptionCard from "./Cards/DescriptionCard";
 import { CheckIcon } from "./CheckIcon";
+import { features } from "@/lib/features";
 
 export default function WhyChooseUs() {
   return (
@@ -15,43 +16,13 @@ export default function WhyChooseUs() {
         className=""
       />
       <DescriptionCard title="Bizi Neden Tercih Etmelisiniz">
-        <ul className="flex flex-col">
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Modern dekorasyon
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Geniş kapasite
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Özel etkinlikler
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Profesyonel ekip
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Kusursuz hizmet
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Misafir rahatlığı
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Geniş otopark
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Merkezi konum
-          </li>
-          <li className="flex flex-row gap-2">
-            <CheckIcon />
-            Hayalinizdeki düğün
-          </li>
+        <ul className="flex flex-col gap-1">
+          {features.map((feature) => (
+            <li className="flex flex-row gap-4">
+              <div>{feature.icon}</div>
+              <h3> {feature.name}</h3>
+            </li>
+          ))}
         </ul>
       </DescriptionCard>
     </InformationSection>
