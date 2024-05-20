@@ -46,18 +46,13 @@ export const features = [
     icon: <FaCouch size={22} />,
   },
   {
-    name: "Geniş otopark",
-    description: "Ziyaretçilerimiz için geniş ve güvenli otopark alanı mevcut.",
-    icon: <FaCar size={22} />,
-  },
-  {
     name: "Merkezi konum",
     description: "Şehir merkezinde kolay ulaşılabilir bir konumda bulunuyor.",
     icon: <FaMapMarkerAlt size={22} />,
   },
   {
-    name: "Hayalinizdeki düğün",
-    description: "Unutulmaz düğünler için mükemmel bir mekan sunuyoruz.",
+    name: "Hayalinizdeki etkinlik",
+    description: "Unutulmaz etkinlikler için mükemmel bir mekan sunuyoruz.",
     icon: <FaHeart size={22} />,
   },
 ];
