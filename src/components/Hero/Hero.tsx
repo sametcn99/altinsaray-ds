@@ -2,6 +2,7 @@ import { ImageCard } from "../Cards/ImageCard";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import IconButton from "../Buttons/IconButton";
 import { ImLocation } from "react-icons/im";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,14 +26,18 @@ export default function Hero() {
             <span>Harbiye Zarif Sk. No:1 Çankaya/ANKARA</span>
           </div>
           <div className="flex flex-row flex-wrap gap-2">
-            <IconButton>
-              <FaPhoneAlt className="text-2xl text-green-500" />
-              <span className="text-lg">+90 444 44 44</span>
-            </IconButton>
-            <IconButton>
-              <FaWhatsapp className="text-2xl text-green-500" />
-              <span className="text-lg">Whatsapp</span>
-            </IconButton>
+            <Link href={"tel:+904444444"}>
+              <IconButton>
+                <FaPhoneAlt className="text-2xl text-green-500" />
+                <span className="text-lg">+90 444 44 44</span>
+              </IconButton>
+            </Link>
+            <Link href={"https://wa.me/+904444444"}>
+              <IconButton>
+                <FaWhatsapp className="text-2xl text-green-500" />
+                <span className="text-lg">Whatsapp</span>
+              </IconButton>
+            </Link>
           </div>
         </div>
       </div>
