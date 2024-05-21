@@ -1,11 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { navigationLinks } from "@/lib/navigation";
 import Link from "next/link";
 import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
 import { Courgette } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { texts } from "@/lib/texts";
+import { useOnClickOutside } from "usehooks-ts";
 
 const font = Courgette({
   subsets: ["latin"],
@@ -15,11 +16,25 @@ const font = Courgette({
 export default function Navbar() {
   const [hover, setHover] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const ref = useRef(null);
+  const handleClickOutside = () => {
+    // Your custom logic here
+    console.log("clicked outside");
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  };
 
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false); // Close menu after clicking
+  };
+
+  useOnClickOutside(ref, handleClickOutside);
+  const handleClickInside = () => {
+    // Your custom logic here
+    console.log("clicked inside");
   };
 
   return (
@@ -28,6 +43,7 @@ export default function Navbar() {
       className={cn(
         `z-50 flex w-full select-none flex-row flex-wrap items-center justify-between gap-2 text-nowrap rounded-2xl px-4 text-2xl lg:justify-between`,
       )}
+      ref={ref}
     >
       <Link
         href="/"
