@@ -4,8 +4,8 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import ScrollTop from "@/components/ui/ScrollTop";
 import NavbarWrapper from "@/components/Sections/Navbar/NavbarWrapper";
-import Notification from "@/components/Buttons/Notification";
 import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -66,6 +66,7 @@ export default function RootLayout({
           <ScrollTop />
         </section>
       </body>
+      <GoogleAnalytics gaId="G-XR3W7833MT" />
     </html>
   );
 }
