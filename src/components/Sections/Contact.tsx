@@ -17,7 +17,7 @@ export default function Contact() {
       />
       <DescriptionCard title={texts.iletisim.title}>
         <p>{texts.iletisim.description}</p>
-        <div className="flex flex-col gap-4 pt-4 font-bold">
+        <div className="flex select-none flex-col gap-4 pt-4 font-bold">
           <Link
             href={`tel:${texts.whatsapp}`}
             target="_blank"
