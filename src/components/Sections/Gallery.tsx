@@ -25,7 +25,7 @@ export default function Gallery() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <InformationSection id="iletisim">
+    <InformationSection id="galeri">
       <div className="relative flex max-w-[40rem] flex-row flex-wrap items-center justify-center gap-2">
         {salonImages.map((image, index) => (
           <Image

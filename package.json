@@ -2,6 +2,12 @@
   "name": "altinsaray-ds",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "samet can cıncık",
+    "email": "sametcn99@gmail.com",
+    "url": "https://www.sametcc.me/"
+  },
+  "homepage": "https://www.altinsarayweddinghall.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

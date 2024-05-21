@@ -6,6 +6,8 @@ export const texts = {
   address: "Harbiye, Zarif Sk. No:1 D:C, 06460 Çankaya/Ankara",
   telephone: "+90 535 457 83 12",
   whatsapp: "+905354578312",
+  website: "https://www.altinsarayweddinghall.com/",
+  email: "altinsarayweddinghall@gmail.com",
   hakkimizda: {
     title: "Hakkımızda",
     description:
