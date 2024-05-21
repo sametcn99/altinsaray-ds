@@ -28,22 +28,20 @@ export default function Gallery() {
     <InformationSection id="iletisim">
       <div className="relative flex max-w-[40rem] flex-row flex-wrap items-center justify-center gap-2">
         {salonImages.map((image, index) => (
-          <div className="relative" key={index}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              onLoad={handleImageLoad}
-              className={cn(isLoading ? `opacity-30` : `opacity-100`)}
-            />
-          </div>
+          <Image
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            onLoad={handleImageLoad}
+            className={cn(isLoading ? `opacity-30` : `opacity-100`)}
+          />
         ))}
         {isLoading && (
           <Loader className={cn(`absolute left-1/2  top-1/2 z-0`)} />
         )}
       </div>
-
       <DescriptionCard title={texts.galeri.title}>
         <p>{texts.galeri.description}</p>
       </DescriptionCard>
