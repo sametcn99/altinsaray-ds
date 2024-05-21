@@ -10,8 +10,8 @@ export default function WhyChooseUs() {
       <Image
         src={"/wedding.png"}
         alt="Letter Icon"
-        width={400}
-        height={400}
+        width={350}
+        height={350}
         className=""
       />
       <DescriptionCard title="Bizi Neden Tercih Etmelisiniz">
