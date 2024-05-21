@@ -25,19 +25,19 @@ export const metadata: Metadata = {
   ],
   category: "Wedding",
   robots: "index, follow",
-  metadataBase: new URL("https://www.altinsarayweddinghall.com/"),
+  metadataBase: new URL("https://altinsarayweddinghall.com/"),
   twitter: {
     card: "summary",
     creator: "@altinsarayweddinghall",
     title: "Altın Saray Wedding Hall",
     creatorId: "altinsarayweddinghall",
     description: "Altın Saray Wedding Hall",
-    site: "https://www.altinsarayweddinghall.com",
+    site: "https://altinsarayweddinghall.com",
   },
   openGraph: {
     title: "Altın Saray Wedding Hall",
     description: "Altın Saray Wedding Hall",
-    url: "https://www.altinsaraydugunsalonlari.com",
+    url: "https://altinsaraydugunsalonlari.com",
     type: "website",
     siteName: "Altın Saray Wedding Hall",
     images: [

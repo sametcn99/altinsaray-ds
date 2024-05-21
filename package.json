@@ -7,7 +7,7 @@
     "email": "sametcn99@gmail.com",
     "url": "https://www.sametcc.me/"
   },
-  "homepage": "https://www.altinsarayweddinghall.com/",
+  "homepage": "https://altinsarayweddinghall.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

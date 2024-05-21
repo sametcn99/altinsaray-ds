@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.altinsarayweddinghall.com/sitemap.xml",
+    sitemap: "https://altinsarayweddinghall.com/sitemap.xml",
   };
 }
