@@ -26,7 +26,7 @@ export default function Gallery() {
 
   return (
     <InformationSection id="galeri">
-      <div className="relative flex max-w-[40rem] flex-row flex-wrap items-center justify-center gap-2">
+      <div className="pointer-events-none relative flex max-w-[40rem] select-none flex-row flex-wrap items-center justify-center gap-2">
         {salonImages.map((image, index) => (
           <Image
             key={index}
