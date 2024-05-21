@@ -65,26 +65,6 @@ export default function Navbar() {
             </button>
           ))}
         </div>
-        {menuOpen && (
-          <Link
-            href={`tel:${texts.whatsapp}`}
-            className="flex flex-row items-center gap-2 transition-all duration-700 hover:font-medium lg:hidden"
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-            onDragStart={(e) => e.preventDefault()}
-          >
-            <FaPhone
-              className={cn(
-                `m-2 inline -scale-x-90 transform rounded-2xl  text-4xl transition-all duration-500`,
-                hover ? "rotate-6 font-bold text-green-500" : "",
-              )}
-            />
-            <div className={cn("flex flex-col")}>
-              <span>{texts.telephone}</span>
-              <span className="text-sm">Bize Ulaşın</span>
-            </div>
-          </Link>
-        )}
       </div>
       <Link
         href={`tel:${texts.whatsapp}`}
