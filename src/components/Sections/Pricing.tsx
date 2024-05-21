@@ -13,7 +13,6 @@ export function Pricing() {
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
           <PlanCard
             title="Temel Paket"
-            price={99}
             tags={[
               "720p Video Düzenleme",
               "Catering Hizmeti",
@@ -21,11 +20,10 @@ export function Pricing() {
             ]}
           />
           <PlanCard
-            title="Özel Paket"
-            price={120}
+            title="Düğün Paketi"
             tags={[
               "Temel Paket İçeriği",
-              "1080p Video Düzenleme",
+              "Müzik ve Eğlence",
               "Premium Video Şablonları",
               "İşbirliği Araçları",
             ]}
@@ -33,7 +31,6 @@ export function Pricing() {
           />
           <PlanCard
             title="Kurumsal Paket"
-            price={199}
             tags={[
               "Temel Paket İçeriği",
               "Müzik ve Eğlence",

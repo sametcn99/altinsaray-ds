@@ -10,7 +10,7 @@ export default function PlanCard({
 }: {
   tags: string[];
   title: string;
-  price: number;
+  price?: number;
   popular?: boolean;
 }) {
   return (
@@ -22,9 +22,11 @@ export default function PlanCard({
       )}
       <div>
         <h3 className="text-center text-2xl font-bold">{title}</h3>
-        <div className="mt-4 text-center text-zinc-600 ">
-          <span className="text-4xl font-bold">{price}</span> ₺/ay
-        </div>
+        {price && (
+          <div className="mt-4 text-center text-zinc-600 ">
+            <span className="text-4xl font-bold">{price}</span> ₺/ay
+          </div>
+        )}
         <ul className="mt-4 space-y-2">
           {tags.map((tag) => (
             <li className="flex items-center" key={tag}>
