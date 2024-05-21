@@ -35,7 +35,10 @@ export default function Gallery() {
             width={image.width}
             height={image.height}
             onLoad={handleImageLoad}
-            className={cn(isLoading ? `opacity-30` : `opacity-100`)}
+            className={cn(
+              isLoading ? `opacity-30` : `opacity-100`,
+              "rounded-xl shadow-md",
+            )}
           />
         ))}
         {isLoading && (
