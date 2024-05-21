@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const texts = {
   title: "Altın Saray Wedding Hall",
   catchword: "Özel günlerinizi unutulmaz kılmak için.",
@@ -18,5 +20,10 @@ export const texts = {
     title: "İletişim",
     description:
       "Altın Saray Wedding Hall, düğün, nişan, kına gecesi, sünnet düğünü ve özel etkinlikleriniz için hizmet vermektedir. Rezervasyon ve fiyat bilgisi almak için bizimle iletişime geçebilirsiniz. Ayrıca, salonumuzu ziyaret etmek ve daha fazla bilgi almak için aşağıdaki iletişim bilgilerimizi kullanabilirsiniz.",
+  },
+  galeri: {
+    title: "Galeri",
+    description:
+      "Altın Saray Wedding Hall'un büyüleyici atmosferini ve sunduğumuz hizmetleri daha yakından görmek için galerimize göz atın. Özel anlarınız için ilham alabileceğiniz fotoğraflar burada.",
   },
 };
