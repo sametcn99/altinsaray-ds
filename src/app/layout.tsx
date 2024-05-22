@@ -6,6 +6,7 @@ import ScrollTop from "@/components/ui/ScrollTop";
 import NavbarWrapper from "@/components/Sections/Navbar/NavbarWrapper";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -71,6 +72,7 @@ export default function RootLayout({
           <Footer />
           <ScrollTop />
         </section>
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-XR3W7833MT" />
     </html>
