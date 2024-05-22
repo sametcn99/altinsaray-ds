@@ -1,9 +1,9 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended" // TypeScript için önerilen ESLint kurallarını ekleyin
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "error" // Kullanılmayan değişkenler için hata verin
+    "@typescript-eslint/no-unused-vars": "error"
   }
 }

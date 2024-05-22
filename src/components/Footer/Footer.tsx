@@ -8,21 +8,22 @@ export default function Footer() {
       <div className="flex flex-col items-center">
         <div className="grid gap-2">
           {navigationLinks.map((item, index) => (
-            <a key={index} href={item.href} className="text-sm ">
+            <Link key={index} href={item.href} className="text-sm ">
               {item.title}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
       <div className="grid gap-1">
         {socialMedia.map((item, index) => (
-          <a
+          <Link
             key={index}
             href={item.href}
+            target="_blank"
             className="flex h-8 w-fit items-center justify-center gap-2 rounded-full p-2 text-sm  hover:text-text-100"
           >
             {item.icon} <span>{item.title}</span>
-          </a>
+          </Link>
         ))}
       </div>
       <Link
@@ -30,7 +31,7 @@ export default function Footer() {
         target="_blank"
         className="absolute bottom-2 left-1/2 -translate-x-1/2 transform text-sm text-text-100 transition-all duration-700 hover:scale-105 hover:text-text-200"
       >
-        tasarım sametcc.me
+        sametcc.me
       </Link>
     </footer>
   );

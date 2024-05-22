@@ -10,7 +10,10 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Altın Saray Wedding Hall",
+  title: {
+    template: "%s | Altın Saray Wedding Hall",
+    default: "Altın Saray Wedding Hall",
+  },
   description: "Altın Saray Wedding Hall",
   creator: "Altın Saray Wedding Hall",
   keywords: [
@@ -35,7 +38,10 @@ export const metadata: Metadata = {
     site: "https://altinsarayweddinghall.com",
   },
   openGraph: {
-    title: "Altın Saray Wedding Hall",
+    title: {
+      template: "%s | Altın Saray Wedding Hall",
+      default: "Altın Saray Wedding Hall",
+    },
     description: "Altın Saray Wedding Hall",
     url: "https://altinsaraydugunsalonlari.com",
     type: "website",
@@ -43,8 +49,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/favicon.png",
-        width: 1000,
-        height: 1000,
+        width: 500,
+        height: 500,
         alt: "Altın Saray Wedding Hall",
       },
     ],

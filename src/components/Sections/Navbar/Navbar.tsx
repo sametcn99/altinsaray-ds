@@ -83,7 +83,8 @@ export default function Navbar() {
         </div>
       </div>
       <Link
-        href={`tel:${texts.whatsapp}`}
+        href="/yonlendir/tel"
+        target="_blank"
         className="hidden flex-row items-center gap-2 transition-all duration-700 hover:font-medium lg:flex"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

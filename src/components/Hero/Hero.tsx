@@ -1,7 +1,6 @@
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
 import Link from "next/link";
-import Modal from "../ui/Modal";
 import { texts } from "@/lib/texts";
 import { ImageCard } from "../Cards/ImageCard";
 
@@ -32,7 +31,7 @@ export default function Hero() {
         </Link>
         <div className="flex select-none flex-col flex-wrap items-center justify-center gap-2">
           <Link
-            href={`tel:${texts.telephone}`}
+            href={`yonlendir/phone`}
             target="_blank"
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
@@ -40,7 +39,7 @@ export default function Hero() {
             <span className="text-lg">{texts.telephone}</span>
           </Link>
           <Link
-            href={`https://wa.me/${texts.whatsapp}`}
+            href={`yonlendir/whatsapp`}
             target="_blank"
             className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
           >

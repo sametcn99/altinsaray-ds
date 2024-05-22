@@ -4,22 +4,22 @@ import { FaEarthEurope } from "react-icons/fa6";
 export const socialMedia = [
   {
     title: "Website",
-    href: "https://www.altinsarayweddinghall.com",
+    href: "yonlendir/website",
     icon: <FaEarthEurope />,
   },
   {
     title: "Facebook",
-    href: "https://www.facebook.com",
+    href: "yonlendir/facebook",
     icon: <FaFacebook />,
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com",
+    href: "/yonlendir/instagram",
     icon: <FaInstagram />,
   },
   {
     title: "Tiktok",
-    href: "https://www.tiktok.com",
+    href: "yonlendir/tiktok",
     icon: <FaTiktok />,
   },
 ];
