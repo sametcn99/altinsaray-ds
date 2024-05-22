@@ -11,14 +11,14 @@ export default function Hero() {
       id="hosgeldiniz"
     >
       <div className="flex  flex-col flex-wrap gap-2 pt-4">
-        <p className="max-w-[50rem] text-center text-4xl font-light md:text-start">
-          {texts.catchword}
-        </p>
         <h1 className="gradient bg-clip-text text-center text-5xl font-black text-transparent sm:text-8xl">
           Altın Saray
           <br />
           Wedding Hall
         </h1>
+        <p className="max-w-[50rem] text-center text-3xl font-light">
+          {texts.catchword}
+        </p>
         <Link
           target="_blank"
           href={
