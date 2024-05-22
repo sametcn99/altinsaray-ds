@@ -66,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body className={cn(`${montserrat.className} pattern  w-full`)}>
-        <section className="mx-auto max-w-screen-2xl scroll-smooth px-3 text-text-400 antialiased selection:bg-text-200 selection:text-text-700">
+        <section className="mx-auto max-w-screen-2xl scroll-smooth px-3 text-text-400 antialiased selection:bg-text-400 selection:text-text-900">
           <NavbarWrapper />
           {children}
           <Footer />
