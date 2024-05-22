@@ -33,7 +33,7 @@ export default function Hero() {
           <Link
             href={`yonlendir/phone`}
             target="_blank"
-            className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
+            className="flex w-[15rem] flex-row gap-2 rounded-2xl p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
             <FaPhoneAlt className="text-2xl text-green-500" />
             <span className="text-lg">{texts.telephone}</span>
@@ -41,7 +41,7 @@ export default function Hero() {
           <Link
             href={`yonlendir/whatsapp`}
             target="_blank"
-            className="flex w-[15rem] flex-row gap-2 rounded-2xl border p-2 px-4 transition-all duration-1000 hover:font-bold"
+            className="flex w-[15rem] flex-row gap-2 rounded-2xl p-2 px-4 transition-all duration-1000 hover:font-bold"
           >
             <FaWhatsapp className="text-2xl text-green-500" />
             <span className="text-lg">Whatsapp</span>
