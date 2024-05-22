@@ -30,7 +30,7 @@ export default function MapCard() {
             href="yonlendir/harita"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-light hover:underline"
+            className="text-sm font-light hover:underline"
           >
             Harita Yüklenmediyse Tıklayın
           </Link>
