@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import InformationSection from "@/components/Cards/InformationSection";
 import { texts } from "@/lib/texts";
-import { FaMap, FaPhone } from "react-icons/fa";
+import { FaMap, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export default function Page() {
   return (
@@ -36,7 +36,7 @@ export default function Page() {
           rel="noopener noreferrer"
           className="inline-flex w-[15rem] items-center gap-2 rounded-2xl border p-2 transition-all duration-300 hover:bg-background-700 hover:font-bold hover:underline"
         >
-          <FaPhone className="-scale-x-90 " /> Whatsapp
+          <FaWhatsapp /> Whatsapp
         </Link>
         <Link
           href={`/yonlendir/harita`}
