@@ -36,13 +36,13 @@ export default function Navbar() {
     <nav
       id="navbar"
       className={cn(
-        `z-50 flex w-full select-none flex-row flex-wrap items-center justify-between gap-2 text-nowrap rounded-2xl px-4 text-2xl lg:justify-between`,
+        `flex w-full select-none flex-row flex-wrap items-center justify-between text-nowrap rounded-2xl text-xl lg:justify-between`,
       )}
       ref={ref}
     >
       <Link
         href="/"
-        className={`${font.className} gradient flex select-none bg-clip-text p-4 text-3xl`}
+        className={`${font.className} gradient flex select-none bg-clip-text text-2xl`}
         onDragStart={(e) => e.preventDefault()}
       >
         Altın Saray
@@ -56,7 +56,7 @@ export default function Navbar() {
       </div>
       <div
         className={cn(
-          `fixed right-7 top-16 z-50 mt-12 w-[16rem] flex-col items-center justify-between gap-2 rounded-2xl bg-background-300 bg-opacity-70 p-2 backdrop-blur-sm lg:static lg:flex lg:w-auto lg:flex-row lg:bg-transparent`,
+          `fixed right-7 top-16 z-50 mt-12 w-[16rem] flex-col items-center justify-between gap-2 rounded-2xl bg-background-300 bg-opacity-70 backdrop-blur-sm lg:static lg:flex lg:w-auto lg:flex-row lg:bg-transparent`,
           {
             hidden: !menuOpen,
             flex: menuOpen,
@@ -64,18 +64,16 @@ export default function Navbar() {
           ``,
         )}
       >
-        <div className={cn(`flex flex-col items-center gap-2 lg:flex-row`)}>
-          {navigationLinks.map((link) => (
-            <button
-              key={link.href}
-              className="transition-all duration-1000 hover:scale-105 hover:font-bold"
-              onDragStart={(e: any) => e.preventDefault()}
-              onClick={() => handleClick(link.id)}
-            >
-              {link.title}
-            </button>
-          ))}
-        </div>
+        {navigationLinks.map((link) => (
+          <button
+            key={link.href}
+            className="transition-all duration-1000 hover:scale-105 hover:font-bold"
+            onDragStart={(e: any) => e.preventDefault()}
+            onClick={() => handleClick(link.id)}
+          >
+            {link.title}
+          </button>
+        ))}
       </div>
       <Link
         href="/yonlendir/tel"
@@ -87,13 +85,13 @@ export default function Navbar() {
       >
         <FaPhone
           className={cn(
-            `m-2 inline -scale-x-90 transform rounded-2xl  text-4xl transition-all duration-500`,
+            `m-2 inline -scale-x-90 transform rounded-2xl  text-3xl transition-all duration-500`,
             hover ? "rotate-6 font-bold text-green-500" : "",
           )}
         />
         <div className={cn("flex flex-col")}>
-          <span>{texts.telephone}</span>
           <span className="text-sm">Bize Ulaşın</span>
+          <span>{texts.telephone}</span>
         </div>
       </Link>
     </nav>
