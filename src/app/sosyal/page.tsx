@@ -2,7 +2,6 @@ import { socialMedia } from "@/lib/socialMedia";
 import Link from "next/link";
 import React from "react";
 import InformationSection from "@/components/Cards/InformationSection";
-import { texts } from "@/lib/texts";
 import { FaMap, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export default function Page() {
