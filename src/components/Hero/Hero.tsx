@@ -24,7 +24,7 @@ export default function Hero() {
           href={
             "https://www.google.com/maps?ll=39.890812,32.84109&z=20&t=m&hl=en&gl=TR&mapclient=embed&cid=16277603766031075323"
           }
-          className="flex select-text flex-row items-center justify-center gap-1 text-center hover:font-bold"
+          className="flex select-text flex-row items-center justify-center gap-1 text-center transition-all duration-700 hover:font-bold"
         >
           <ImLocation className="text-text-600" />
           <span>{texts.address}</span>
