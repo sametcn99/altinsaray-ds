@@ -19,7 +19,6 @@ export default function Navbar() {
   const ref = useRef(null);
   const handleClickOutside = () => {
     // Your custom logic here
-    console.log("clicked outside");
     if (menuOpen) {
       setMenuOpen(false);
     }
@@ -32,10 +31,6 @@ export default function Navbar() {
   };
 
   useOnClickOutside(ref, handleClickOutside);
-  const handleClickInside = () => {
-    // Your custom logic here
-    console.log("clicked inside");
-  };
 
   return (
     <nav

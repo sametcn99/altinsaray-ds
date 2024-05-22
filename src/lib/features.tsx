@@ -5,7 +5,6 @@ import {
   FaSmile,
   FaStar,
   FaCouch,
-  FaCar,
   FaMapMarkerAlt,
   FaHeart,
 } from "react-icons/fa";

@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const texts = {
   title: "Altın Saray Wedding Hall",
   catchword: "Özel günlerinizi unutulmaz kılmak için.",

@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaEarthEurope } from "react-icons/fa6";
 
 export const socialMedia = [
