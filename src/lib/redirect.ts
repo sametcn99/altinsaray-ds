@@ -4,7 +4,7 @@ export const redirectLinks = [
     href: "https://www.instagram.com/altinsarayweddinghall",
   },
   {
-    title: ["website", "web", "internet", "site", "link", "url", "www"],
+    title: ["website", "web", "internet", "site", "url", "www"],
     href: "https://www.altinsarayweddinghall.com",
   },
   { title: ["whatsapp", "wp"], href: "https://wa.me/+905354578312" },
