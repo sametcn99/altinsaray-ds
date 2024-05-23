@@ -7,6 +7,7 @@ import { Courgette } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { texts } from "@/lib/texts";
 import { useOnClickOutside } from "usehooks-ts";
+import { motion } from "framer-motion";
 
 const font = Courgette({
   subsets: ["latin"],
@@ -33,7 +34,9 @@ export default function Navbar() {
   useOnClickOutside(ref, handleClickOutside);
 
   return (
-    <nav
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       id="navbar"
       className={cn(
         `flex w-full select-none flex-row flex-wrap items-center justify-between text-nowrap rounded-2xl text-xl lg:justify-between`,
@@ -94,6 +97,6 @@ export default function Navbar() {
           <span>{texts.telephone}</span>
         </div>
       </Link>
-    </nav>
+    </motion.nav>
   );
 }
