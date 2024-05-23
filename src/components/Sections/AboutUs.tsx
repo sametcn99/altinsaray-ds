@@ -11,7 +11,7 @@ export default function AboutUs() {
         alt="Letter Icon"
         width={300}
         height={300}
-        className=""
+        className="pointer-events-none select-none"
       />
       <DescriptionCard title={texts.hakkimizda.title}>
         <p>{texts.hakkimizda.description}</p>

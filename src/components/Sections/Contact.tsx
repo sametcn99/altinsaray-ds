@@ -13,7 +13,7 @@ export default function Contact() {
         alt="Letter Icon"
         width={300}
         height={300}
-        className=""
+        className="pointer-events-none select-none"
       />
       <DescriptionCard title={texts.iletisim.title}>
         <p>{texts.iletisim.description}</p>
